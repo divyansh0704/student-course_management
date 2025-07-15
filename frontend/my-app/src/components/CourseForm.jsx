@@ -9,7 +9,7 @@ const CourseForm = () => {
     if(!form.name.trim() || !form.instructor.trim()){
       alert("Please fill in all fields")
     }
-    await axios.post('http://localhost:3000/api/courses',form)
+    await axios.post('https://student-course-management-wvtf.onrender.com/api/courses',form)
     setForm({name:"",instructor:""})
     alert("Course Added!")
   }

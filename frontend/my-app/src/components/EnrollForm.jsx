@@ -10,7 +10,7 @@ const EnrollForm = ({fetchStudents}) => {
     if(!studentId || !courseId){
       alert("Please fill all fields");
     }
-    await axios.post("http://localhost:3000/api/enrollments",{
+    await axios.post("https://student-course-management-wvtf.onrender.com/api/enrollments",{
       studentId,
       courseId
     });

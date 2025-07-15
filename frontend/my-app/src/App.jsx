@@ -13,7 +13,7 @@ function App(){
   const [students,setStudents]=useState([]);
 
     const fetchData = async()=>{
-        const res = await axios.get("http://localhost:3000/api/enrollments/student-with-courses")
+        const res = await axios.get("https://student-course-management-wvtf.onrender.com/api/enrollments/student-with-courses")
         setStudents( res.data)
     };
     useEffect(()=>{

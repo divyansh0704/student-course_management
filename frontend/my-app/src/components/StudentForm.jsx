@@ -8,7 +8,7 @@ const StudentForm = ({fetchStudents}) => {
     if(!form.name.trim() || !form.email.trim()){
       alert("Please fill all the fields");
     }
-    await axios.post("http://localhost:3000/api/students",form);
+    await axios.post("https://student-course-management-wvtf.onrender.com/api/students",form);
     setForm({name:"",email:""});
     alert("Student added!");
     fetchStudents();
