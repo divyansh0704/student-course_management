@@ -20,7 +20,7 @@ const EnrollForm = ({fetchStudents}) => {
     fetchStudents();
   }
   return (
-    <div>
+    <div className='center'>
       <h2>Enroll Student</h2>
       <input type="number" placeholder='Student ID' value={studentId} onChange={(e)=>setStudentId(e.target.value)} />
       <input type="number" placeholder='Course ID' value={courseId} onChange={(e)=>setCourseId(e.target.value)} />

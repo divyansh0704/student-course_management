@@ -15,7 +15,7 @@ const StudentForm = ({fetchStudents}) => {
   }
  
   return (
-    <div>
+    <div className='center'>
       <h2>Add Student</h2>
       <input type="text" placeholder='Student Name' value={form.name} onChange={(e)=>setForm({...form,name:e.target.value})} />
       <input type="text" placeholder='Email' value={form.email} onChange={(e)=>setForm({...form,email:e.target.value})} />

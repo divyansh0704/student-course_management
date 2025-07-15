@@ -74,3 +74,38 @@ li {
 strong {
   color: #00796b;
 }
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  input {
+    width: 90%;
+    margin: 6px 0;
+    font-size: 0.95rem;
+  }
+
+  button {
+    width: 90%;
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+
+  h1, h2 {
+    font-size: 1.4rem;
+  }
+
+  li {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+}
+

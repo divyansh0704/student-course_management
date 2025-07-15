@@ -14,7 +14,7 @@ const CourseForm = () => {
     alert("Course Added!")
   }
   return (
-    <div>
+    <div className='center'>
       <h2>Add Course</h2>
       <input type="text" placeholder="Course Name" value={form.name} onChange={(e)=>setForm({...form,name:e.target.value})} />
       <input type="text" placeholder='instructor name' value={form.instructor} onChange={(e)=>setForm({...form,instructor:e.target.value})} />
